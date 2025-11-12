@@ -18,6 +18,10 @@ The hyperparameters of both the base models and the meta-model were fine-tuned u
 
 The resulting model achieves a **ROC AUC of 0.701** on the validation set, demonstrating a good ability to discriminate between clients who are likely to default and those who are not. This solution can be used by financial institutions to make more informed lending decisions, improving both credit accessibility and risk management, and ultimately supporting financial inclusion in underbanked regions.
 
-![](assets/fastapi1.png)
+# Docker Hub
 
-![](assets/fastapi2.png)
+![](assets/docker_hub.png)
+
+
+# AWS ECR
+![](assets/aws_ECR.png)
