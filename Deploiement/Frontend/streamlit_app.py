@@ -119,7 +119,10 @@ if st.button("🔮 Predict Credit Status"):
         response = requests.post(f"{BACKEND_URL}/api/predict", json=payload)
         if response.status_code == 200:
             result = response.json()
-            st.success(f"🎯 Prediction: {result.get('predicted_status', 'Unknown')}")
+            credit_status = result.get('credit_status', 'Unknown')
+            probability = result.get('probability', 0.0)
+            st.success(f"🎯 Prediction: {credit_status}")
+            st.info(f"📊 Probability: {probability:.4f} ({probability*100:.2f}%)")
         else:
             st.error(f"❌ Error {response.status_code}: {response.text}")
     except Exception as e:
