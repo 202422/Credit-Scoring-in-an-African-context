@@ -18,9 +18,11 @@ The hyperparameters of both the base models and the meta-model were fine-tuned u
 
 The resulting model achieves a **ROC AUC of 0.701** on the validation set, demonstrating a good ability to discriminate between clients who are likely to default and those who are not. This solution can be used by financial institutions to make more informed lending decisions, improving both credit accessibility and risk management, and ultimately supporting financial inclusion in underbanked regions.
 
-# Streamlit App
+# Demo
 
-![](assets/front-end.png)
+<video src="https://github.com/user-attachments/assets/6a409d21-c0e5-4462-b905-1b29ee9ab8ac" controls width="600">
+  Your browser does not support the video tag.
+</video>
 
 # Docker Hub
 
